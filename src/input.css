@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding: 6rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    height: 2rem;
+    background-color: #FAF4D3;
+    color: #0C1814;
+    font-family: "Lato", 'sans-serif';
+    font-weight: 700;
+    outline: none;
+    padding-left: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+textarea {
+    height: 4rem;
+    max-height: 10rem;
+}
+
+input[type="submit"] {
+    background-color: transparent;
+    color: #FAF4D3;
+    border: 1px solid #FAF4D3;
+    padding: 0.5rem 1.5rem;
+    transition: all 150ms ease-in-out;
+    text-wrap: nowrap;
+    font-size: 1.312rem;
+    width: fit-content;
+    margin-top: 0.5rem;
+    font-family: "Inconsolata", 'monospace';
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #FAF4D3;
+    color: #0C1814;
+    border: 1px solid transparent;
+    padding: 0.5rem 1.5rem;
+}
+
+@layer components {
+    .button-dark {
+        background-color: #0C1814;
+        color: #FAF4D3;
+        border: 1px solid transparent;
+        padding: 0.5rem 1.5rem;
+        transition: all 150ms ease-in-out;
+        text-wrap: nowrap;
+        cursor: pointer;
+    }
+    
+    .button-dark:hover {
+        background-color: transparent;
+        color: #0C1814;
+        border: 1px solid #0C1814;
+        padding: 0.5rem 1.5rem;
+    }
+    
+    .button-border {
+        background-color: transparent;
+        color: #FAF4D3;
+        border: 1px solid #FAF4D3;
+        padding: 0.5rem 1.5rem;
+        transition: all 150ms ease-in-out;
+        text-wrap: nowrap;
+        cursor: pointer;
+    }
+    
+    .button-border:hover {
+        background-color: #FAF4D3;
+        color: #0C1814;
+        border: 1px solid transparent;
+        padding: 0.5rem 1.5rem;
+    }
+    
+    .button-border-two {
+        background-color: transparent;
+        color: #0C1814;
+        border: 1px solid #0C1814;
+        padding: 0.5rem 1.5rem;
+        transition: all 150ms ease-in-out;
+        text-wrap: nowrap;
+        cursor: pointer;
+    }
+
+    .button-border-two:hover {
+        background-color: #0C1814;
+        color: #FAF4D3;
+        border: 1px solid transparent;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .active {
+        display: flex !important;
+    }
+
+    .text-shadow {
+        text-shadow: 1px 1px 2px #0C1814;
+    }
+}
